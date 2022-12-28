@@ -1,38 +1,103 @@
-.App {
-  text-align: center;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+*::-webkit-scrollbar{
+  display: none;
 }
+.login-bod{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.login-card{
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 10px;
+  padding: 40px 20px;
+  border-radius: 20px;
+  width: 60vw;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+.login-card input{
+  width: 80%;
+  padding: 10px;
+  border-radius:20px ;
+  outline: none;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.login-card button{
+  width: 80%;
+  border: none;
+  padding: 10px;
+  border-radius:20px ;
+  background-color: #4287f5;
   color: white;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.userprof{
+  padding: 40px;
+  
+}
+.userinput{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+
+}
+.userinput input{
+  width: 20vw;
+  padding: 10px;
+  border-radius:10px ;
+  outline: none;
+  border: none;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.userinput button{
+  width: 10vw;
+  font-size: 0.6rem;
+  border: none;
+  padding: 10px;
+  border-radius:10px ;
+  background-color: #4287f5;
+  color: white;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.userlist{
+  width: 90vw;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  
+}
+.borderline{
+  width: 40vw;
+  border-bottom: 4px solid #4287f5;
 }
 
-.App-link {
-  color: #61dafb;
-}
+.usercardlist{
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.usercard{
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  align-items: center;
+
 }
